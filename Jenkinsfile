@@ -10,36 +10,14 @@ date'''
     }
 
     stage('Test') {
-      parallel {
-        stage('Test') {
-          steps {
-            echo 'Hello there'
-          }
-        }
-
-        stage('Test1') {
-          steps {
-            echo 'wow'
-          }
-        }
-
+      steps {
+        echo 'Hello there'
       }
     }
 
     stage('Deploy') {
-      parallel {
-        stage('Deploy') {
-          steps {
-            echo 'My name is tanya'
-          }
-        }
-
-        stage('Deploy2') {
-          steps {
-            echo 'Deploy to production'
-          }
-        }
-
+      steps {
+        echo 'My name is tanya'
       }
     }
 
