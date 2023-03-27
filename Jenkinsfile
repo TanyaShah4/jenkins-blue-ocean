@@ -4,7 +4,6 @@ pipeline {
     stage('Build') {
       steps {
         sh '''pwd
-cal 2023
 date'''
       }
     }
